@@ -1,0 +1,156 @@
+body {background-color: rgb(12, 12, 11); font-family: Georgia, 'Times New Roman', Times, serif; margin: 0px;}
+a {text-decoration: none;}
+
+header {
+    width: 100%;
+    background-image: url(../media/imgs/Bassist.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: aliceblue;
+    font-size: 80px; font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+header h1 {padding: 20px;}
+
+.biografia {
+    background-color: rgb(12, 12, 11);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;      /*Substitui flex-direction e wrap.*/
+    justify-content: space-around;
+    align-content: center;
+}
+
+.article-bio{ 
+    color:white;
+    padding: 10vh 20px;
+    margin: 10px;
+    width: 100%;                           
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex; flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 17px; font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.article-bio p {margin: 5px;}
+
+
+.article-bio img {margin: 5px; width: 30vh; border-radius: 70%; border: 5px solid rgb(112, 88, 42);}
+.article-bio hr {border: 1px solid rgb(112, 88, 42); width: 400px; margin-top: 10px;}
+
+.conteudo {
+    background-color: black;
+    width: 100%; /* Garante que não ultrapasse a tela */
+    max-width: 100vw; /* Segurança adicional para viewport */
+    padding: 15vh 0;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center; /* Centraliza se houver poucos itens */
+    align-items: flex-start;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+h2{
+    color: rgb(112, 88, 42);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative; font-size: 50px; top: 110px;
+}
+
+.album {
+    flex: 1 1 200px; 
+    max-width: 300px;
+    margin: 15px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.album img { 
+        border-radius: 50%; 
+        width: 150px; 
+        height: 150px;  
+        border: 5px solid rgb(112, 88, 42);
+        transition: transform 0.3s ease;
+}
+.album img:hover {
+    transform: scale(1.10);
+    box-shadow: 0 7px 10px rgba(250, 190, 24, 0.2);
+}
+
+.album audio{ width: 100%;}
+
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#datas {
+    color: white;
+    border: 3px solid rgb(114, 134, 134); border-radius: 5px;
+    width: 50%;
+    margin: 20px 0;
+    font-size: 19px;
+}
+#datas h3 { font-size: 30px; margin-top: 20px; color: rgb(112, 88, 42);} 
+#datas ul{
+    list-style: none; 
+    padding: 5px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+#datas a {
+    color: rgb(112, 88, 42);
+    transition: 0.3s ease;
+}
+ #datas a:hover {color: white;}
+
+form{
+    color: rgb(112, 88, 42);
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+button {
+    padding: 5px 10px;
+    border-radius: 20%;
+}
+
+input{
+    margin: 5px 0px;
+    height: 10px; 
+    width: 350px;
+    padding: 15px;
+    border-radius: 30px; border: none;
+    font-size: 15px;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-right: 20px;
+}
+footer h3 { 
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px; 
+    transition: 0.5s ease;
+}
+footer a { color: white;}
+footer h3:hover{ color: rgb(112, 88, 42); font-size: 25px;}
